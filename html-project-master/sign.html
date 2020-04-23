@@ -1,0 +1,54 @@
+<html>
+<HEAD>
+<TITLE>PROFILE</TITLE>
+
+<style>
+body
+{
+background-size:100%;
+}
+#myBtn
+{
+  background-color: #4CAF50;
+    color: white;
+ size:7px;
+    padding: 13px 20px;
+    margin: 15px 0px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+</style>
+<script> 
+function myfunction()
+{
+var x=document.getElementById("fname").value;
+var y=document.getElementById("password").value;
+
+if(x=="admin" && y=="admin")
+{
+window.open("sahildhiman.html"); 
+}
+else
+{
+alert("Invalid Username and password");
+}
+}
+</script>
+</HEAD>
+<body background="eJgjxb.jpg">
+<h1><center><font color="cyan">Log in</font></center></h1>
+
+<fieldset id="name">
+<center>
+<font color="white">
+<form id="myForm" onsubmit="myfunction()">
+Username <input type="text" id="fname" required></input><br><br>
+Password <input type="password" id="password" required></input></font><br><br>
+<input type="submit" id="myBtn" value="LogIn"><font color="white"><center></font></center></button></form></center>
+
+</fieldset>
+
+
+</body>
+</html>

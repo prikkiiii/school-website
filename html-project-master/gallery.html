@@ -1,0 +1,48 @@
+<html>
+<head><link rel="icon" href="sapient-school-main-page-logo.png">
+<title>gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {
+display:none;
+}
+</style>
+<body bgcolor="black">
+
+
+
+<div style="max-width:1350px">
+  <img class="mySlides" src="1.jpeg" style="width:100%" height="670">
+<img class="mySlides" src="4.jpeg" style="width:100%" height="670">  
+  <img class="mySlides" src="2.jpeg" style="width:100%" height="670">
+  <img class="mySlides" src="3.jpeg" style="width:100%" height="670">
+<img class="mySlides" src="5.jpg" style="width:100%" height="670">
+</div>
+
+<script>
+var myIndex = 0;
+//carousel();
+
+function carousel() 
+{
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) 
+	{
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) 
+{
+myIndex = 1
+}    
+    x[myIndex-1].style.display = "block";  
+   setTimeout(carousel, 2000); 
+}
+</script>
+
+<div >
+<a href="school.html"><img src="hmbutton.png" style="float:right;" height="25" width="25"></img></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<HEAD>
+<link rel="icon" href="sapient-school-main-page-logo.png">
+<TITLE>welcome to my world</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none;}
+</style>
+</HEAD>
+<body>
+<div class="w3-content w3-section" style="max-width:1350px" >
+<img class="mySlides" src="20180825_083747-1200x450.jpg" style="width:100%" height="480">
+  <img class="mySlides" src="action-activity-balls-296302.jpg" style="width:100%" height="480">
+<img class="mySlides" src="rahul-jain-741415-unsplash.jpg" style="width:100%" height="480">
+  
+  <img class="mySlides" src="celebration-children-daytime-1206101.jpg" style="width:100%" height="480">
+  <img class="mySlides" src="vanveenjf-1130935-unsplash.jpg" style="width:100%" height="480">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+</body>
+</html>
